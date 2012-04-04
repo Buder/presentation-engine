@@ -7,12 +7,12 @@ The core HTML5 presentation engine, components, and assets for all presentations
 * Download a copy of this repo to a suitable directory on your computer.
 * Download a copy of the course slides to that same directory so that you end up with a structure like this:
 
-some_folder
-	- presentation-engine (folder)
-	- tcad_certification (folder)
-		- index.html  <-- TOC for the whole course
-		- 000 (folder) 
-			- index.html <-- TOC for the lesson
+some_folder  
+	- presentation-engine (folder)  
+	- tcad_certification (folder)  
+		- index.html  <-- TOC for the whole course  
+		- 000 (folder)  
+			- index.html <-- TOC for the lesson  
 ... etc.
 
 ### Running a presentation
