@@ -4,23 +4,23 @@ The core HTML5 presentation engine, components, and assets for all presentations
 
 ## Instructions
 
-* Download a copy of this repo to a suitable directory on your computer.
-* Download a copy of the course slides to that same directory so that you end up with a structure like this:
+1. Download a copy of this repo to a suitable directory on your computer.
+2. Download a copy of the course slides to that same directory so that you end up with a structure like this:
 
-some_folder  
-	- presentation-engine (folder)  
-	- tcad_certification (folder)  
-		- index.html  <-- TOC for the whole course  
-		- 000 (folder)  
-			- index.html <-- TOC for the lesson  
-... etc.
+    some_folder  
+       - presentation-engine (folder)  
+       - tcad_certification (folder)  
+          - index.html  <-- TOC for the whole course  
+          - 000 (folder)  
+             - index.html <-- TOC for the lesson  
+    ... etc
 
 ### Running a presentation
 
-* Open the coursename/index.html in your browser. Safari and Chrome work best, Firefox works too.
-* Click a lesson's name, which opens the 000/index.html file for that lesson.
-* Click the "Notes" icon to open a separate window (you might need to override any pop-up blocker to see that window). That new window will display presenter notes as you step through the slides.
-* At the end of a lesson, close the presenter notes window. Click the AppU logo, which will take you back to the course TOC slide.
+1. Open the coursename/index.html in your browser. Safari and Chrome work best, Firefox works too.
+2. Click a lesson's name, which opens the 000/index.html file for that lesson.
+3. Click the "Notes" icon to open a separate window (you might need to override any pop-up blocker to see that window). That new window will display presenter notes as you step through the slides.
+4. At the end of a lesson, close the presenter notes window. Click the AppU logo, which will take you back to the course TOC slide.
 
 ### Navigating within a presentation
 
