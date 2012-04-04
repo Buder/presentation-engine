@@ -7,13 +7,15 @@ The core HTML5 presentation engine, components, and assets for all presentations
 1. Download a copy of this repo to a suitable directory on your computer.
 2. Download a copy of the course slides to that same directory so that you end up with a structure like this:
 
-    some_folder  
-       - presentation-engine (folder)  
-       - tcad_certification (folder)  
-          - index.html  <-- TOC for the whole course  
-          - 000 (folder)  
-             - index.html <-- TOC for the lesson  
+`
+    some_folder
+       - presentation-engine (folder)
+       - tcad_certification (folder)
+          - index.html  <-- TOC for the whole course
+          - 000 (folder)
+             - index.html <-- TOC for the lesson
     ... etc
+`
 
 ### Running a presentation
 
@@ -44,7 +46,7 @@ A print-friendly CSS style sheet is included in the coursename/css folder. Load 
 
 Language strings are provides in the 000/i18n/localizations.js file. Translating a course *mostly* involves updating that file with new strings. Make a copy of the language node, using the ISO code for the language. The presentation-engine's scripts should then display those strings based on the browser's language setting. If you need to provide new screenshots, the <img> links must be within localized strings in the localizations.js file so that the appropriate images are displayed. The actual image files should be within the 000/images folder, where 000 is the lesson's folder.
 
-At runtime, the presentation-engine scripts read the localizations.js file and dynamically replace strings based on their classnames in the HTML. Thus, in the HTML file, you might have a tag like this: <div class="l_somename">Default English content</div>. In the localizations.js file, there will be a corresponding "%l_somename": "Translated text" line. 
+At runtime, the presentation-engine scripts read the localizations.js file and dynamically replace strings based on their classnames in the HTML. Thus, in the HTML file, you might have a tag like this: `<div class="l_somename">Default English content</div>`. In the localizations.js file, there will be a corresponding `"%l_somename": "Translated text"` line. 
 
 ### Authoring
 
