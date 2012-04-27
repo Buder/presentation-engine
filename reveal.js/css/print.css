@@ -10,14 +10,22 @@
    background. This prevents elements from extending 
    beyond the edge of the printed page, and prevents
    unnecessary background images from printing */
-body, #content, #container {
-   width: 100%;
-   margin: 0;
-   float: none;
-   background: #fff url(none);
+body {
+	background: #fff url(none);
+	font-size: 13pt;
+	width: auto;
+	height: auto;
+	border: 0;
+	margin: 0 5%;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
 }
 html {
 	background: #fff;
+	width: auto;
+	height: auto;
+	overflow: visible;
 }
 
 /* SECTION 2: Remove any elements not needed in print. 
@@ -28,9 +36,10 @@ html {
 
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
-body {
-   font: 1em Georgia, "Times New Roman", Times, serif !important;
-   color: #000; 
+body, p, td, li, div, a {
+	font-size: 13pt;
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	color: #000; 
 }
 
 /* SECTION 4: Set heading font face, sizes, and color.
@@ -38,51 +47,109 @@ body {
    Perhaps use a large sans-serif for distinction. */
 h1,h2,h3,h4,h5,h6 {
    color: #000;
+	height: auto;
+	line-height: normal;
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	text-shadow: 0 0 0 #000 !important;
+	text-align: left;
+	letter-spacing: normal;
 }
 /* Need to reduce the size of the fonts for printing */
-h1 { font-size: 90%; }
-h2 { font-size: 80%; }
-h3 { font-size: 70%; }
-h4 { font-size: 60%; font-variant: small-caps; }
-h5 { font-size: 60%; }
-h6 { font-size: 50%; font-style: italic; }
+h1 { font-size: 26pt !important;  }
+h2 { font-size: 22pt !important; }
+h3 { font-size: 20pt !important; }
+h4 { font-size: 20pt !important; font-variant: small-caps; }
+h5 { font-size: 19pt !important; }
+h6 { font-size: 18pt !important; font-style: italic; }
 
 /* SECTION 5: Make hyperlinks more usable.
    Ensure links are underlined, and consider appending
    the URL to the end of the link for usability. */
 a:link, a:visited {
-   color: #00c;
-   font-weight: bold;
-   text-decoration: underline; }
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+}
 #content a:link:after, #content a:visited:after {
-   content: " (" attr(href) ") ";
+	content: " (" attr(href) ") ";
+	font-size: 90%;
 }
 
 
 /* SECTION 6: Reveal.js specific additions
 	by @skypanther
 */
+.slidenote, ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+	text-align: left !important;
+}
 .slidenote {
-	display:block;
-	min-height: 400px;
+	margin-top: 50px;
+	border-top: 1px solid #000;
+	padding-top: 20px;
 }
 #reveal .slides {
 	position: static;
-	width: 90%;
-	height: 'inherit';
+	width: auto;
+	height: auto;
+	
+	left: auto;
+	top: auto;
+	margin-left: auto;
+	margin-top: auto;
+	padding: auto;
+	
+	overflow: visible;
 	display: block;
+	
+	text-align: center;
+	-webkit-perspective: none;
+	-moz-perspective: none;
+	-ms-perspective: none;
+	  perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	-moz-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	   perspective-origin: 50% 50%;
+}
+#reveal .slides>section, #reveal .slides>section>section, #reveal .slides>section.past, #reveal .slides>section.future {
+	visibility: visible;
+	position: static;
+	width: 90%;
+	height: auto;
+	display: block;
+	overflow: visible;
 	
 	left: 0%;
 	top: 0%;
 	margin-left: 0px;
 	margin-top: 0px;
 	padding: 20px 0px;
-}
-#reveal .slides>section, #reveal .slides>section>section, #reveal .slides>section.past, #reveal .slides>section.future {
-	visibility: visible;
-	position: static;
-	display: block;
-	opacity: 1;
-	margin-top: 0px;
-}
 
+	opacity: 1;
+
+	-webkit-transform-style: flat;
+	-moz-transform-style: flat;
+	-ms-transform-style: flat;
+	transform-style: flat;
+
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+section {
+	page-break-after: always !important; 
+}
+#reveal section img {
+	margin: 15px;
+	background: rgba(255,255,255,1);
+	border: 1px solid #666;
+}
