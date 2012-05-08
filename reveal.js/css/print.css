@@ -167,12 +167,20 @@ a:link, a:visited {
 	position: relative!important;
 
 }
-section {
-	page-break-after: always !important; 
+#reveal section {
+    page-break-after: always !important; 
+    display: block !important;
+}
+#reveal section.stack {
+    page-break-after: avoid !important; 
+}
+#reveal section .fragment {
+    opacity: 1 !important;
 }
 #reveal section img {
-	margin: 15px;
-	background: rgba(255,255,255,1);
-	max-width: 550px;
-	max-height: 550px;
+    display: block;
+    margin: 15px 0px;
+    background: rgba(255,255,255,1);
+    border: 1px solid #666;
+    box-shadow: none;
 }
