@@ -181,6 +181,16 @@ a:link, a:visited {
     display: block;
     margin: 15px 0px;
     background: rgba(255,255,255,1);
-    border: 1px solid #666;
+    border: none;
     box-shadow: none;
+	display: block;
+	page-break-before: auto !important;
+	page-break-after: auto !important;
+	page-break-inside: avoid !important;
+}
+img {
+	display: block;
+	page-break-before: auto !important;
+	page-break-after: auto !important;
+	page-break-inside: avoid !important;
 }
