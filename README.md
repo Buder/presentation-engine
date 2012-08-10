@@ -1,15 +1,15 @@
 # presentation-engine 
 
-The core HTML5 presentation engine, components, and assets for all presentations in the [appcelerator-training/tcad_certification](https://github.com/appcelerator-training/tcad_certification) and [appcelerator-training/tcmd_certification](https://github.com/appcelerator-training/tcmd_certification) (private) repositories.
+The core HTML5 presentation engine, components, and assets for all presentations in the [appcelerator-training/tcad_certification](https://github.com/appcelerator-training/tcad_certification) and [appcelerator-training/tcmd_certification](https://github.com/appcelerator-training/tcmd_certification) repositories.
 
 ## Instructions
 
-1. Download a copy of this repo to a suitable directory on your computer.
+1. Download a copy of this repo to a suitable directory on your computer. You might need to rename the resulting folder to **presentation-engine** (GitHub will tack on a unique identifier if you download via the Downloads or Tags feature rather than pulling a copy via git).
 2. Download a copy of the course slides to that same directory so that you end up with a structure like this:
 
 ```
 some_folder  
-   - presentation-engine (folder)  
+   - presentation-engine (folder, must be named as shown here!)  
    - tcad_certification (folder)  
       - index.html  <-- TOC for the whole course  
          - 000 (folder)  
