@@ -50,7 +50,9 @@ At runtime, the presentation-engine scripts read the localizations.js file and d
 
 ### Authoring
 
-There's a TextMate bundle included in this repo that you can use to write your own lessons or slides. While not tested, you should be able to use that bundle within Studio if you don't have TextMate. See an existing lesson's index.html to get an understanding of how the HTML is structured. There's no need to modify the presenternotes.html file (though you will need a copy within the lesson's folder). Place images in the 000/images folder. 
+There's a TextMate bundle included in this repo that you can use to write your own lessons or slides. Check out the [how-to document](https://github.com/appcelerator-training/presentation-engine/blob/master/bundle_howto.md) for help on installing and using that bundle with TextMate, Titanium Studio, or Sublime Text 2. 
+
+See an existing lesson's index.html to get an understanding of how the HTML is structured. There's no need to modify the presenternotes.html file (though you will need a copy within the lesson's folder). Place images in the lesson's images folder. 
 
 ### Thanks to
 
