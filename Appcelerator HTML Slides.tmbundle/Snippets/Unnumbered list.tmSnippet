@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>					&lt;ul&gt;
+	<string>					&lt;ul style="width:80%;"&gt;
 						&lt;li class="l_${1:BULLET}1"&gt;&lt;/li&gt;
-						&lt;li class="l_${2:BULLET}2"&gt;&lt;/li&gt;
-						&lt;li class="l_${3:BULLET}3"&gt;&lt;/li&gt;
-						&lt;li class="l_${4:BULLET}4"&gt;&lt;/li&gt;
+						&lt;li class="l_${1:BULLET}2"&gt;&lt;/li&gt;
+						&lt;li class="l_${1:BULLET}3"&gt;&lt;/li&gt;
+						&lt;li class="l_${1:BULLET}4"&gt;&lt;/li&gt;
 					&lt;/ul&gt;
 </string>
 	<key>name</key>

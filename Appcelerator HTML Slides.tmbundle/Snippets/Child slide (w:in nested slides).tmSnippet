@@ -6,7 +6,7 @@
 	<string>					&lt;section&gt;
 						&lt;h2 class="l_${1:CLASSNAME}"&gt;Child Slide&lt;/h2&gt;
 						&lt;p class="l_${2:CLASSNAME}"&gt;nested slide&lt;/p&gt;
-						&lt;div class="slidenote"&gt;&lt;p class="l_slidenote_${3:CLASSNAME}"&gt;&lt;/p&gt;&lt;/div&gt;
+						&lt;div class="slidenote"&gt;&lt;p class="l_slidenote_${1:CLASSNAME}"&gt;&lt;/p&gt;&lt;/div&gt;
 					&lt;/section&gt;
 </string>
 	<key>name</key>
